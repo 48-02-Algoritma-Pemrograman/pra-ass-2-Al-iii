@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Gaji{
     public static int masaKerja;
 
-    public static double gaji(int masaKerja){
+    public static int gaji(int masaKerja){
     if (masaKerja<5) {
         return 5000000;
     } else if (masaKerja>=5&&masaKerja<=10) {
@@ -12,7 +12,7 @@ public class Gaji{
     return 10000000;
     }
 
-    public static double lembur(int masaKerja){
+    public static int lembur(int masaKerja){
         if (masaKerja<5) {
             return 40000;
         } else if (masaKerja>=5&&masaKerja<=10) {
@@ -28,13 +28,13 @@ public class Gaji{
 
         /* Pekerjaan anda mulai dari sini */
 
-        double gajiBulanan = gaji(masaKerja);
-        double lemburBulanan = lembur(masaKerja);
+        int gajiBulanan = gaji(masaKerja);
+        int lemburBulanan = lembur(masaKerja);
 
         lemburBulanan*=jamLembur;
         gajiBulanan+=lemburBulanan;
 
-        System.out.println("Total gaji bulanan: Rp. "+gajiBulanan);
+        System.out.println(gajiBulanan);
         
         /* Pekerjaan anda berakhir sini */
 
