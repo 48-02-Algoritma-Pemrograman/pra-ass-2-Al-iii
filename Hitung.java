@@ -7,7 +7,7 @@ public class Hitung{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         /* Pekerjaan anda mulai dari sini */
-
+ 
         /* Pekerjaan anda berakhir sini */
         System.out.println(Hitung.class.getDeclaredMethods().length);
         System.out.println(Hitung.class.getDeclaredFields().length);
